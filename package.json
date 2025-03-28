@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "run:maskify": "node exercicios/1/run-maskify-test.js",
+    "run:updateData": "node exercicios/2/run-updateData-test.js",
+    "run:getRickAndMortyCharacters": "node exercicios/3/run-getRickAndMortyCharacters-test.js",
+    "run:checkIfTheFirstLetterIsUppercase": "node exercicios/4/run-checkIfTheFirstLetterIsUppercase-test.js"
   },
   "dependencies": {
     "react": "^19.0.0",
