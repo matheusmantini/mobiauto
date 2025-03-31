@@ -7,23 +7,30 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "cypress:open": "cypress open",
     "run:maskify": "node exercicios/1/run-maskify-test.js",
     "run:updateData": "node exercicios/2/run-updateData-test.js",
     "run:getRickAndMortyCharacters": "node exercicios/3/run-getRickAndMortyCharacters-test.js",
     "run:checkIfTheFirstLetterIsUppercase": "node exercicios/4/run-checkIfTheFirstLetterIsUppercase-test.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.1",
+    "@reduxjs/toolkit": "^2.6.1",
+    "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.4"
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cypress": "^14.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
