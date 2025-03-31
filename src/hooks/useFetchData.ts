@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
 export function useFetchData<T>(
-  url: string | null
+  url: string | null,
+  requestOptions?: RequestInit
 ): [T | null, boolean, string | null] {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ export function useFetchData<T>(
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch(url);
+        const response = await fetch(url, { ...requestOptions });
 
         if (!response.ok) {
           throw new Error(`Erro ao buscar dados: ${response.statusText}`);
@@ -28,7 +29,7 @@ export function useFetchData<T>(
         setLoading(false);
       }
     })();
-  }, [url]);
+  }, [url, requestOptions]);
 
   return [data, loading, error];
 }
