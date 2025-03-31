@@ -1,6 +1,6 @@
 import { iCustomAutocompleteProps } from "@/types/customAutocompleteProps";
 import { highlightText } from "@/utils/highlightText";
-import { Autocomplete, TextField, CircularProgress } from "@mui/material";
+import { Autocomplete, TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const StyledTextField = styled(TextField)({
